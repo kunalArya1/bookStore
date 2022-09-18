@@ -1,0 +1,259 @@
+
+*{
+    font-family: Gilroy;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html,body{
+    
+    height: 100%;
+    width: 100%;
+}#main{
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(245, 251, 251);
+}
+#nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    width: 100vw;
+    /* background-color: red; */
+    padding: 0 58px;
+    border-bottom: 0px solid black;
+}
+#search  {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+} #button{
+    margin-left: 10px ;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}#nav>i{
+    font-size: 25px;
+    margin-left: -120px;
+    color: rgb(115, 218, 218);
+}
+#profile{
+    height: 73%;
+    border-radius: 50%;
+    width: 3.3%;
+   background-image: url(https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+   background-size: cover;
+}
+hr{
+    opacity: 0.3;
+}
+#foryou{
+    font-family: Gilroy; 
+    position: absolute;
+    left: 5%;
+    top: 14%;
+    font-size: 23px;
+}
+#part1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    height: 50%;
+    padding: 0 20px ;
+    overflow-x: auto;
+    width: 100%;
+    /* background-color: red; */
+    top: 24%;
+}
+#part1::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    height: 100%;
+    width: 450px;
+    border-radius: 17px;
+    background-color: aqua;
+}
+.card:nth-child(1){
+    background: linear-gradient(rgba(67, 192, 226, 0.657),rgb(172, 206, 211));
+}
+#books{
+    margin-left: 20px;
+    height: 230px;
+    width: 150px;
+    border-radius: 5px;
+    background-image: url(https://i.pinimg.com/564x/ba/ee/19/baee1951344f3d9dfc808d563351decb.jpg);
+    background-size: cover;
+}#contents{
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    height: 230px;
+    width: 200px;
+}
+#contents>p{
+    margin-top: 8px;
+   opacity: 0.6;
+}
+#part1-star{
+    margin-top: 20px;
+
+}
+#part1-star>i{
+    margin-right: 4.5px;
+}
+#part1-star>i:nth-child(1){
+    color: rgb(235, 235, 221);
+}
+/* #part1-star>i:nth-child(2){
+    color: rgb(235, 235, 221);
+}#part1-star>i:nth-child(3){
+    color: rgb(235, 235, 221);
+}#part1-star>i:nth-child(4){
+    color: rgb(235, 235, 221);
+}
+#rev{
+    margin-top: 39px;
+    display: flex;
+    gap: 6px;
+}
+.review{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+    background-size: cover;
+}.review:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+}.review:nth-child(3){
+    color: #000;
+    background-image: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:nth-child(2){
+    background: linear-gradient(rgb(215, 191, 254),rgb(177, 147, 245));
+}
+.card:nth-child(2) #books{
+    background-image: url(https://demo.phlox.pro/book-store/wp-content/uploads/sites/116/2019/06/7-2.jpg);
+    background-size: cover;
+}.card:nth-child(2)  #rev .review:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
+    background-size: cover;
+}
+.card:nth-child(2)  #rev .review:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+}
+
+
+.card:nth-child(3){
+    background: linear-gradient(rgb(255, 206, 175),rgb(245, 182, 100));
+}
+.card:nth-child(3) #books{
+    background-image: url(https://truelakeaudio1.files.wordpress.com/2017/06/how-to-book-cover.jpg);
+    background-size: cover;
+}.card:nth-child(3)  #rev .review:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+}
+.card:nth-child(3)  #rev .review:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+}.card:nth-child(3) #part1-star>i:nth-child(4){
+    color: rgb(179, 169, 169);
+}
+.card:nth-child(3) #part1-star>i:nth-child(5){
+    color: 
+    rgb(197, 179, 179);
+}
+.card:nth-child(4){
+    box-shadow:0px 20px 50px rgb(91, 212, 202)  ;
+    background: linear-gradient(rgb(143, 241, 220),rgb(91, 212, 202));
+}
+.card:nth-child(4) #books{
+    background-image: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/attachment_83090027.jpg?auto=format&q=60&fit=max&w=930);
+    background-size: cover;
+}.card:nth-child(2)  #rev .review:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
+    background-size: cover;
+}
+.card:nth-child(2)  #rev .review:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#part2{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    height: 500px;
+    width: 100%;
+}
+#browse{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    flex-shrink: none;
+    align-items: flex-start;
+   
+    white-space: nowrap;
+    height: 100%;
+    width:70% ;
+    padding: 3px 35px ;
+    background-color: beige;
+    
+}#author{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(188, 111, 16);
+}.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 250px;
+}#book{
+    height: 170px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: red;
+}#content{
+    padding: 8px 4px;
+    height: 150px;
+    width: 100px;
+   
+}#star{
+    margin-top: 20px;
+}#star>i{
+   font-size: 14px;
+   margin-right: 4px;
+} */
